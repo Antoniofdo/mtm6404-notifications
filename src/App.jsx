@@ -1,5 +1,5 @@
 import './App.css'
-import NotificationList from './components/NotificationList'
+import NotificationList from '/components/NotificationList'
 
 function App() {
   return (
