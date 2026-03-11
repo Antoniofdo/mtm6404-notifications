@@ -1,12 +1,10 @@
-function Notification({ id, name, message, onClear }) {
+function Notification({ name, message, onClear, children }) {
   return (
-    <div className="notification">
-      <h4>{name}</h4>
+    <div className="Notification">
+      {children} {/* Optional extra content passed from App */}
+      <h3>{name}</h3>
       <p>{message}</p>
-
-      <button onClick={() => onClear(id)}>
-        Clear
-      </button>
+      <button onClick={onClear}>Clear</button>
     </div>
   );
 }
